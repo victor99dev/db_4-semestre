@@ -1,0 +1,27 @@
+SELECT * FROM produtos_comprados
+WHERE  ID_VA = '1' AND ID_COMPRA = '1';
+
+SELECT 
+NOME, 
+CODIGO, 
+COR, 
+ULTIMA_ORDENHA 
+FROM dados_gado
+where NOME = 'VACA 1' ;
+      
+SELECT 
+C.ID_GADO,
+C.LOTE,
+C.NOME,
+R.TIPO_TRATAMENTO,
+R.TEMPO_TRATAMENTO
+FROM registro_medico AS R
+INNER JOIN cadastro_gado AS C
+WHERE R.ID_GADO = '01';
+
+SELECT 
+FUNCAO,
+ENDERECO,
+CELULAR
+FROM funcionarios
+where NOME = 'DANIEL';
